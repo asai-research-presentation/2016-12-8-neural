@@ -34,13 +34,35 @@ _/✔/_ Guided by *domain-independent* heuristics
 
 * Reinforcement Learning
 
-Policy function \pi(s): S \rightarrow A --- returns action a for state s
+*Policy function* $\pi(s)\mapsto a : S \rightarrow A$ -- returns action $a$ for state $s$
 
-Optimal Policy \pi^*(s)
+Agent always follows the policy function
 
-Goal: Find the best approximation of $\pi^*$
+*Optimal Policy* $\pi^* (s)$ : a policy that gives the highest reward
 
-* Reinforcement Learning in Latent Space
+Goal: *Find/learn* the best approximation of $\pi^*$
+
+Methods: Value-iteration, Policy-iteration, TD-learning ∋ Q-learning
+
+* Latent Space $L$ of an original state space $S$
+
+#+BEGIN_QUOTE
+Apparently very complex $S$ can be described by low-dimentional $L$
+#+END_QUOTE
+
+[[jpg:static/cicada]]
+
+* Reinforcement Learning(RL) in Latent Space
+
+RL in $S$ is too difficult → Apply RL to $L$ for speedup
+
+\[L \ni y = Wx+b, x\in S\]
+
+　
+
+mapping 62-DOF space → 2D
+
+[[png:static/latent-RL]]
 
 * Deep Reinforcement Learning
 
