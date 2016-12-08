@@ -52,11 +52,11 @@ Apparently very complex $S$ can be described by low-dimentional $L$
 
 [[jpg:static/cicada]]
 
-* Reinforcement Learning(RL) in Latent Space
+* Reinforcement Learning(RL) in Latent Space (e.g. Luck IROS14, AAAI16)
 
 RL in $S$ is too difficult → Apply RL to $L$ for speedup
 
-\[L \ni y = Wx+b, x\in S\]
+\[x\in S, y \in L: \ y = f(x) \]
 
 　
 
@@ -64,8 +64,39 @@ mapping 62-DOF space → 2D
 
 [[png:static/latent-RL]]
 
-* Deep Reinforcement Learning
+* Underlying belief:
 
+#+BEGIN_QUOTE
+The real world is apparently complex, but in *almost all cases* they can be described by *only a few parameters*.
+#+END_QUOTE
+
+* Manifold Hypothesis
+
+[[png:static/manifold]]
+
+* Neural Network
+
++ A framework for learning a *function* that maps input $x$ to output $y$
+
++ Perceptron w/ $>2$ layers can learn arbitrary function
+
+[[png:static/nn]]
+
+* Autoencoder
+
+#+BEGIN_CENTER
+Unsupervised learning method which learns to 
+
+*compress S* into *L* and *decompress back to S*
+#+END_CENTER
+
+→ able to obtain the latent space $L$
+
+[[png:static/autoenc]]
+
+* Deep Q Learning
+
+RL + deep learning
 
 * Comparison
 
