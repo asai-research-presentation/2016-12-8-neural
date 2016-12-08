@@ -1,0 +1,691 @@
+make[1]: 警告: 副次 make で -jN を強制指定しました: jobserver モードを無効にします.
+make[1]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural' に入ります
+make -C img
+make -C css
+make -C scripts
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/img' に入ります
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/css' に入ります
+sass --update .
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/scripts' に入ります
+make[2]: 'all' に対して行うべき事はありません.
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/scripts' から出ます
+scripts/org-html.sh presen.org presen.org.html
+scripts/org-latex.sh presen.org presen.org.tex
+make[2]: 'all' に対して行うべき事はありません.
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/img' から出ます
+Loading /home/guicho/repos/presentations/2016-12-8-neural/scripts/compile-org-html.el (source)...
+Loading /home/guicho/repos/presentations/2016-12-8-neural/scripts/compile-org-latex.el (source)...
+make[2]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural/css' から出ます
+Saving file /home/guicho/repos/presentations/2016-12-8-neural/presen.org.tex...
+Saving file /home/guicho/repos/presentations/2016-12-8-neural/presen.org.html...
+Wrote /home/guicho/repos/presentations/2016-12-8-neural/presen.org.tex
+platex presen-nokey.tex
+platex presen.tex
+platex resume.tex
+Wrote /home/guicho/repos/presentations/2016-12-8-neural/presen.org.html
+cp -f presen.org.html index.html
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex)
+ restricted \write18 enabled.
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex)
+ restricted \write18 enabled.
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.euc) (TeX Live 2015/Debian) (preloaded format=platex)
+ restricted \write18 enabled.
+entering extended mode
+(./presen.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
+Babel <3.9n> and hyphenation patterns for 80 languages loaded.
+(./extarticle.clsentering extended mode
+(./resume.texentering extended mode
+(./presen-nokey.tex
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
+Babel <3.9n> and hyphenation patterns for 80 languages loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/article.cls
+pLaTeX2e <2006/11/10> (based on LaTeX2e <2016/02/01> patch level 0)
+Babel <3.9n> and hyphenation patterns for 80 languages loaded.
+(./extarticle.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/size12.clo
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size17.clo
+Document Class: extarticle 1996/10/08 v1.0 Non Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/extsizes/size17.clo))
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/base/exscale.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty))
+(./sty/anorg.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty)
+(./sty/anorg.sty
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+)(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty)))
+(./sty/anorg.sty (/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+(/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/dvipdfmx-def/dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty))))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty)))))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/auxhook.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/pd1enc.def)))
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/hyperref.cfg)
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/url/url.sty))
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def)
+
+Package hyperref Message: Driver: hdvipdfm.
+
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/hdvipdfm.def
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grffile.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/times.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/helvet.sty)
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/courier.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/generic/ulem/ulem.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsmath.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+For additional information on amsmath, use the `?' option.
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amstext.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsgen.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsbsy.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amssymb.sty
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/amsfonts.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty))
+(/usr/share/texlive/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty)
+(/usr/share/texlive/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/relsize/relsize.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/parskip/parskip.sty))
+(./sty/user.sty
+(/usr/share/texlive/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty)
+(./sty/user.sty)
+(./sty/user.sty
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 15.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 15.
+
+)
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty))
+
+Package hyperref Warning: Option `bookmarks' has already been used,
+(hyperref)                setting the option has no effect on input line 15.
+
+) (/usr/share/texlive/texmf-dist/tex/latex/environ/environ.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/trimspaces/trimspaces.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex))))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjustbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(/usr/share/texlive/texmf-dist/tex/latex/xkeyval/xkeyval.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkeyval.tex
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty
+(/usr/share/texlive/texmf-dist/tex/generic/xkeyval/xkvutils.tex)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/adjcalc.sty)))
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pgf.def
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pgf.def
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/trimclip.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/share/texlive/texmf-dist/tex/latex/collectbox/collectbox.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex))(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+
+(/usr/share/texlive/texmf-dist/tex/latex/adjustbox/tc-pgf.def)(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-lists.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex(/usr/share/texlive/texmf-dist/tex/latex/ms/everyshi.sty))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.code.t
+ex)))) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f) (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f))))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx.def
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-pdf.de
+f
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic.code
+.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigonomet
+ric.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.random.cod
+e.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.comparison
+.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integerari
+thmetics.code.tex)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconstruct.
+code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage.code
+.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicstate.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransformation
+s.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.code.t
+ex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathprocessing
+.code.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.code.te
+x)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex)
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.code.tex
+))))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.code.
+tex))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.code.te
+x))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransparency.c
+ode.tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.code.
+tex (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)))
+(/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty) (/usr/share/texlive/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.tex
+)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty))))))
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-0-65
+.sty
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)))) (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty) (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty)
+(/usr/share/texlive/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version-1-18
+.sty)))))
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty))) (./presen.aux
+) (/usr/share/texlive/texmf-dist/tex/latex/ifoddpage/ifoddpage.sty)) (I search kanjifont definition file: .) . ) (I search font definition file: .
+.
+(/usr/share/texlive/texmf-dist/tex/latex/needspace/needspace.sty .) . . (./resume.aux
+ . .) . ) (I search kanjifont definition file: . (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd .) ) (I search font definition file: .
+(/usr/share/texlive/texmf-dist/tex/latex/varwidth/varwidth.sty
+. . . .) . . . ) (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd)))
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
+(./presen-nokey.aux)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty (I search kanjifont definition file: . . )
+(I search font definition file: . . . . .
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty .) . . )
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ptm.fd))
+(./presen.out) (./presen.out))) ABD: EveryShipout initializing macros
+(./resume.out) (./resume.out
+*geometry* driver: auto-detecting
+*geometry* detected driver: dvips
+(/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/gettitlestring.sty ABD: EveryShipout initializing macros
+(./presen.org.tex)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd))
+(./presen-nokey.out
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)) (./presen-nokey.out) (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+
+LaTeX Warning: No \author given.
+
+(./presen.org.tex
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd)
+ABD: EveryShipout initializing macros (./presen.org.tex [1]
+Overfull \hbox (21.60004pt too wide) in paragraph at lines 16--16
+[][][]$[]$| 
+[1]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JT1/gt/bx/it' undefined
+(Font)              using `JT1/gt/bx/n' instead on input line 26.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/bx/it' undefined
+(Font)              using `JY1/gt/bx/n' instead on input line 26.
+
+[2]
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JT1/gt/bx/it' undefined
+(Font)              using `JT1/gt/bx/n' instead on input line 26.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/bx/it' undefined
+(Font)              using `JY1/gt/bx/n' instead on input line 26.
+
+[2] (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd)
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd) [3] [3] [4] [4] [5] [5]
+Overfull \hbox (18.00003pt too wide) in paragraph at lines 16--16
+[][][]$[]$| 
+
+LaTeX Font Warning: Font shape `JT1/gt/m/it' undefined
+(Font)              using `JT1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/m/it' undefined
+(Font)              using `JY1/gt/m/n' instead on input line 22.
+
+
+LaTeX Font Warning: Font shape `JT1/gt/bx/it' undefined
+(Font)              using `JT1/gt/bx/n' instead on input line 26.
+
+
+LaTeX Font Warning: Font shape `JY1/gt/bx/it' undefined
+(Font)              using `JY1/gt/bx/n' instead on input line 26.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 optimized solver
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 independent
+
+Underfull \hbox (badness 2512) in paragraph at lines 85--85
+[] \OT1/ptm/b/n/12 Re-quires an ex-
+
+Underfull \hbox (badness 2547) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 plicit en-cod-ing \OT1/ptm/m/n/12 of
+
+Underfull \hbox (badness 2547) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 plicit en-cod-ing \OT1/ptm/m/n/12 of
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 specific learned
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/m/n/12 ob-ject, sit-u-a-tion,
+
+Underfull \hbox (badness 2547) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 plicit en-cod-ing \OT1/ptm/m/n/12 of
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/12 specific learned
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/m/n/12 ob-ject, sit-u-a-tion,
+)
+Overfull \hbox (41.98769pt too wide) in paragraph at lines 85--24
+$[]$[]$[]$[]$[]$[]\OT1/ptm/m/n/12 #+END$[]$-
+[1] (./resume.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)
+Output written on resume.dvi (1 page, 4544 bytes).
+Transcript written on resume.log.
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[] \OT1/ptm/b/n/20.74 Scal-able, Highly-
+
+Underfull \hbox (badness 4940) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 optimized solver \OT1/ptm/m/n/20.74 for
+
+Underfull \hbox (badness 2326) in paragraph at lines 85--85
+[] \OT1/ptm/m/n/20.74 Guided by \OT1/ptm/b/n/20.74 domain-
+
+Underfull \hbox (badness 2980) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 en-cod-ing \OT1/ptm/m/n/20.74 of the real
+
+Underfull \hbox (badness 2980) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 en-cod-ing \OT1/ptm/m/n/20.74 of the real
+
+Underfull \hbox (badness 2035) in paragraph at lines 85--85
+[] \OT1/ptm/m/n/20.74 guided by \OT1/ptm/b/n/20.74 instance-
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 specific learned
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 knowl-edge \OT1/ptm/m/n/20.74 (spe-cific
+
+Underfull \hbox (badness 2980) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 en-cod-ing \OT1/ptm/m/n/20.74 of the real
+
+Underfull \hbox (badness 2035) in paragraph at lines 85--85
+[] \OT1/ptm/m/n/20.74 guided by \OT1/ptm/b/n/20.74 instance-
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 specific learned
+
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+\OT1/ptm/b/n/20.74 knowl-edge \OT1/ptm/m/n/20.74 (spe-cific
+)
+Overfull \hbox (73.49911pt too wide) in paragraph at lines 85--22
+$[]$[]$[]$[]$[]$[]\OT1/ptm/m/n/20.74 #+END$[]$-
+[6] (./presen.aux
+Underfull \hbox (badness 10000) in paragraph at lines 85--85
+[] \OT1/ptm/m/n/17.28 Guided by \OT1/ptm/b/n/17.28 domain-
+))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)
+Output written on presen.dvi (6 pages, 6092 bytes).
+Transcript written on presen.log.
+
+Overfull \hbox (61.32608pt too wide) in paragraph at lines 85--22
+$[]$[]$[]$[]$[]$[]\OT1/ptm/m/n/17.28 #+END$[]$-
+[6] (./presen-nokey.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ )
+(see the transcript file for additional information)
+Output written on presen-nokey.dvi (6 pages, 5436 bytes).
+Transcript written on presen-nokey.log.
+nohup bash -c "nohup dvipdfmx -f ipa.map -o resume.pdf resume > /dev/null ; cp resume.pdf ~/Dropbox/repos/presentations/2016-12-8-neural-resume.pdf" &
+nohup bash -c "nohup dvipdfmx -f ipa.map -o presen.pdf presen > /dev/null ; cp presen.pdf ~/Dropbox/repos/presentations/2016-12-8-neural-presen.pdf" &
+nohup bash -c "nohup dvipdfmx -f ipa.map -o presen-nokey.pdf presen-nokey > /dev/null ; cp presen-nokey.pdf ~/Dropbox/repos/presentations/2016-12-8-neural-presen-nokey.pdf" &
+make[1]: ディレクトリ '/home/guicho/repos/presentations/2016-12-8-neural' から出ます
+resume -> resume.pdf
+presen-nokey -> presen-nokey.pdf
+[1presen -> presen.pdf
+
+dvipdfmx:warning: Unparsed material at end of special ignored.
+
+Current input buffer is -->! /landplus90 true store<--
+[1]
+dvipdfmx:warning: Unparsed material at end of special ignored.
+
+Current input buffer is -->! /landplus90 true store<--
+][2][3][4][5][6[1]
+dvipdfmx:warning: Unparsed material at end of special ignored.
+
+Current input buffer is -->! /landplus90 true store<--
+][2][3][4][5][6]
+15631 bytes written
+15751 bytes written
+16524 bytes written
+
+
