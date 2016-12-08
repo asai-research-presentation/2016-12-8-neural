@@ -24,13 +24,90 @@ Made by guicho2.71828 (Masataro Asai)
 #+END_NOTE
 #+END_outline-text-1
 
-* Classical Planning 
+* Latent Space $L$ of an original state space $S$
 
-_/✔/_ *Scalable, Highly-optimized solver* for complex combinatorial problems
+#+BEGIN_QUOTE
+Apparently very complex $S$ can be described by low-dimentional $L$
+#+END_QUOTE
 
-_/✔/_ Guided by *domain-independent* heuristics
+[[jpg:static/cicada]]
 
-*/✘/* *Requires an explicit encoding* of the real world, written by human
+* Manifold Hypothesis
+
+$x$: high dimensional vector in $S$, $z$ in manifold $L$
+
+Data is concentrated around a low dimensional manifold
+
+Hope finding a representation Z of that manifold.
+
+http://www.deeplearningbook.org/ and VAE tutorial
+
+[[png:static/manifold]]
+
+* Manifold Hypothesis
+
+$x$: high dimensional vector in $S$, $z$: manifold $L$
+
+Data is concentrated around a low dimensional manifold
+
+Hope finding a representation Z of that manifold.
+
+http://www.deeplearningbook.org/ and VAE tutorial
+
+[[png:static/manifold2]]
+
+* How to obtain $L$?
+
++ PCA: Principal Component Analysis
+
++ */✘/* Assumes a linear function
+
+\[y = f(x) = Wx + b\]
+
+* Neural Network
+
++ A framework for learning a *function* that maps input $x$ to output $y$
+
++ NN w/ $>2$ layers can learn arbitrary function (given enough neurons)
+
+\[x = \sigma (Wx + b) \]
+
+[[png:static/nn]]
+
+* Autoencoder
+
+#+BEGIN_CENTER
+Unsupervised learning method which learns to 
+
+*compress S* into *L* and *decompress back to S*
+#+END_CENTER
+
+#+BEGIN_CONTAINER-FLUID
+#+BEGIN_ROW-FLUID
+#+BEGIN_SPAN3
+
+#+END_SPAN3
+#+BEGIN_SPAN6
+[[png:static/autoenc]]
+#+END_SPAN6
+#+BEGIN_SPAN3
+
+#+END_SPAN3
+#+END_ROW-FLUID
+#+END_CONTAINER-FLUID
+
+#+BEGIN_ALIGNRIGHT
+→ equivalent to *PCA applied to nonlinear function*
+#+END_ALIGNRIGHT
+
+* Deep Autoencoder
+
+Deep AE made available by various techniques
+
+Stacked AE, pretraining, CNN, dropout, Batch-Normalization, GPU...
+
+[[png:static/deep-ae]]
+
 
 * Reinforcement Learning
 
@@ -44,19 +121,11 @@ Goal: *Find/learn* the best approximation of $\pi^*$
 
 Methods: Value-iteration, Policy-iteration, TD-learning ∋ Q-learning
 
-* Latent Space $L$ of an original state space $S$
-
-#+BEGIN_QUOTE
-Apparently very complex $S$ can be described by low-dimentional $L$
-#+END_QUOTE
-
-[[jpg:static/cicada]]
-
 * Reinforcement Learning(RL) in Latent Space (e.g. Luck IROS14, AAAI16)
 
 RL in $S$ is too difficult → Apply RL to $L$ for speedup
 
-\[x\in S, y \in L: \ y = f(x) \]
+\[x\in S, z \in L: \ x = f(z) \]
 
 　
 
@@ -64,46 +133,42 @@ mapping 62-DOF space → 2D
 
 [[png:static/latent-RL]]
 
-* Underlying belief:
+# * Underlying belief:
+# 
+# #+BEGIN_QUOTE
+# The real world is apparently complex, but in *almost all cases* they can be described by *only a few parameters*.
+# #+END_QUOTE
 
-#+BEGIN_QUOTE
-The real world is apparently complex, but in *almost all cases* they can be described by *only a few parameters*.
-#+END_QUOTE
+* Deep Reinforcement Learning: DQN?
 
-* Manifold Hypothesis
+No, DQN is not using latent space representation
 
-[[png:static/manifold]]
+It represents Q-function by neural network
 
-* Neural Network
+* Classical Planning 
 
-+ A framework for learning a *function* that maps input $x$ to output $y$
+_/✔/_ *Scalable, Highly-optimized solver* for complex combinatorial problems
 
-+ Perceptron w/ $>2$ layers can learn arbitrary function
+_/✔/_ Guided by *domain-independent* heuristics
 
-[[png:static/nn]]
-
-* Autoencoder
-
-#+BEGIN_CENTER
-Unsupervised learning method which learns to 
-
-*compress S* into *L* and *decompress back to S*
-#+END_CENTER
-
-→ able to obtain the latent space $L$
-
-[[png:static/autoenc]]
-
-* Deep Q Learning
-
-RL + deep learning
+*/✘/* *Requires an explicit encoding* of the real world, written by human
 
 * Comparison
 
-
 #+BEGIN_CONTAINER-FLUID
 #+BEGIN_ROW-FLUID
-#+BEGIN_SPAN4
+#+BEGIN_SPAN6
+#+BEGIN_CENTER
+*Latent Reinforcement Learning*
+#+END_CENTER
+
+_/✔/_ Works on the *implicit encoding* of the real world
+
+*/✘/* Reasoning is limited to the *1-step future* of the current state
+
+*/✘/* guided by *instance-specific learned knowledge* (specific object, situation, goal)
+#+END_SPAN6
+#+BEGIN_SPAN6
 #+BEGIN_CENTER
 *Classical Planning*
 #+END_CENTER
@@ -113,30 +178,37 @@ _/✔/_ *Scalable, Highly-optimized solver* for complex combinatorial problems
 _/✔/_ Guided by *domain-independent* heuristics
 
 */✘/* *Requires an explicit encoding* of the real world, written by human
-#+END_SPAN4
-#+BEGIN_SPAN4
-#+BEGIN_CENTER
-*Deep Reinforcement Learning*
-#+END_CENTER
-
-_/✔/_ Works on the *implicit encoding* of the real world
-
-*/✘/* Reasoning is limited to the *1-step future* of the current state
-
-*/✘/* guided by *instance-specific learned knowledge* (specific object, situation, goal)
-#+END_SPAN4
+#+END_SPAN6
 #+END_ROW-FLUID
-#+BEGIN_SPAN4
-#+BEGIN_CENTER
-*Deep Reinforcement Learning*
-#+END_CENTER
-
-_/✔/_ Works on the *implicit encoding* of the real world
-
-*/✘/* Reasoning is limited to the *1-step future* of the current state
-
-*/✘/* guided by *instance-specific learned knowledge* (specific object, situation, goal)
-#+END_SPAN4
 #+END_ROW-FLUID
 #+END_CONTAINER-FLUID
+
+* Goal of this project
+
+|                      |                        |                        |
+|----------------------+------------------------+------------------------|
+| Man-made             |                        |                        |
+| state representation | Reinforcement Learning | Classical Planning     |
+|----------------------+------------------------+------------------------|
+| Latent state         | Latent RL              | *Latent Planning*      |
+| representation       |                        |                        |
+|----------------------+------------------------+------------------------|
+| Deep Latent state    |                        | *Deep Latent Planning* |
+| (found by Deep AE)   |                        |                        |
+
+* How?
+
+Simply put: discretize $z$ into SAS variables
+
+Below: results of encoding a MNIST image (784-variable) to 2 variables
+
+Mapping the input image to latent space (encoding part)
+
+[[png:static/vae-latent]]
+
+* How?
+
+Mapping the latent space to the actual image (decoding part)
+
+[[png:static/vae-manifold]]
 
