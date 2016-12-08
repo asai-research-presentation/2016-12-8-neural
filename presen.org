@@ -1,19 +1,20 @@
-#+title: Yet Another Org-mode Presentation Script
+#+title: 
 #+author: Masataro Asai
 #+include: "head.org"
 #+LINK: img file:img/%s
 #+LINK: png file:img/%s.png
 #+LINK: jpg file:img/%s.jpg
 
+
 #+BEGIN_outline-text-1
-#+BEGIN_XLARGE
 #+BEGIN_CENTER
-To Start Press "n"
-#+END_CENTER
+#+BEGIN_XLARGE
+Classical Planning in a
+
+Deep Latent Space
 #+END_XLARGE
 
-#+BEGIN_CENTER
-*WARN* Turn off your custom keyboard shortcuts
+(WIP project idea)
 #+END_CENTER
 
 #+BEGIN_NOTE
@@ -23,286 +24,66 @@ Made by guicho2.71828 (Masataro Asai)
 #+END_NOTE
 #+END_outline-text-1
 
-* What Is It?
+* Classical Planning 
 
-#+BEGIN_XLARGE
-An Alternative to
-#+BEGIN_CENTER
-Org-based Presentation
-#+END_CENTER
-#+BEGIN_ALIGNRIGHT
-Method
-#+END_ALIGNRIGHT
-#+END_XLARGE
+_/✔/_ *Scalable, Highly-optimized solver* for complex combinatorial problems
 
-#+BEGIN_CENTER
-Proceed with "n"
-#+END_CENTER
+_/✔/_ Guided by *domain-independent* heuristics
 
-* Usage (on browsers)
+*/✘/* *Requires an explicit encoding* of the real world, written by human
 
-#+BEGIN_SMALLER
+* Reinforcement Learning
 
-#+BEGIN_CONTAINER-FLUID
-#+BEGIN_ROW-FLUID
-#+BEGIN_SPAN6
-+ n,<Space> :: go to the next slide/expand a list
-+ p :: back to the previous slide
-+ u, ^ :: go to the parent section
-+ N :: expand all list in the current slide
-#+END_SPAN6
-#+BEGIN_SPAN6
-+ s, or typing "go" :: jump to an arbitrary section (using minibuffer)
-+ d :: debugging mode (shows content border)
-+ <Ctrl-g> or <Esc> :: cancel current key strokes
-+ typing "help" :: show available commands in the minibuffer!
-#+END_SPAN6
-#+END_ROW-FLUID
-#+END_CONTAINER-FLUID
+Policy function \pi(s): S \rightarrow A --- returns action a for state s
 
-#+END_SMALLER
+Optimal Policy \pi^*(s)
 
-* Usage (on emacs)
+Goal: Find the best approximation of $\pi^*$
 
-1. clone [[https://github.com/guicho271828/another-org-info][our repo]]
+* Reinforcement Learning in Latent Space
 
-2. =make html= to publish
-
-3. show it on your browser!
-
-* Virtue
-
-+ Simplicity
-  + =code.js= is a pure javascript, only has 200 lines (increasing as new features
-    are added)
-+ Extensibility
-  + you can write your own extension and its easy
-  + set a function to =keyManager.<your-key-strokes>=
-  + the key strokes should contain character $c$ within char code $32 < c < 126$
-    + =Space,!,",...A,B,C,...x,y,z,{,|,~=
-+ LICENSE
-  + GPLv3 ?? < not attatched a license yet
-
-* Example: Expanding a List
-
-+ *the dots* tell "/this is a content/"
-+ list
-+ list
-* Dependencies
-<<dependency>>
-
-+ jQuery (included)
-+ Inkscape (image conversion)
-+ org-mode (included)
-+ MathJax (optional submodule)
-
-* LaTeX output
-
-+ [[file:presen.pdf][PDF Presentaiton]] presen.pdf -- presentation in pdf with similar
-  appearance. Useful when browser-based presentation is not allowed
-+ [[file:resume.pdf][Printable Resume]] resume.pdf -- short and printed version.
-+ =make pdf= and =make resume= on the shell
-+ need the latest $\mbox{\TeX}$ live installation
-  + see =Makefile=
-  + =platex= and =dvipdfmx=
-  + alternatively, =pdflatex=
-
-* Images
-
-+ Put images into =img/= directory.
-+ svg files are converted into png.
-  + We recommend it because
-    1. In html presentation, the inserted svg images capture the keyboard and mouse event
-       and the presentation sometimes does not work right.
-    2. In resume output and pdf presentation, the =svg= and =svg-inkscape= package is a
-       bit buggy and I personally failed make it work.
-+ svg-png conversion is done by =inkscape=
-  + but you can also use ImageMagick =convert= command.
-  + See =img/Makefile= for more information.
-
-* Org-block templates
-
-We mark the html tag with org-mode blocks such as =#+BEGIN_EXAMPLE=.
-Using [[http://orgmode.org/manual/Easy-Templates.html][block template]] (by modifying =org-structure-template-alist=),
-you can quickly write such blocks i.e.:
-
-#+BEGIN_EXAMPLE
-at the beginning of line, hit
-
-<s<tab>
-
-in normal org-mode destribution in emacs,
-it would expand into:
-
-#+BEGIN_SRC 
-
-#+END_SRC
-#+END_EXAMPLE
-
-** customizing templates
-
-We provide custom =org-structure-template-alist=.
-These blocks are recognized by the stylesheet we provide,
-so they are highlighted correctly.
-
-#+BEGIN_CONTAINER-FLUID
-#+BEGIN_ROW-FLUID
-#+BEGIN_SPAN6
-+ <S -- smaller
-+ <lar -- larger
-+ <t -- twocolumn
-+ <n -- footnote
-+ <r -- float right
-+ <ar -- align right
-+ <lcr -- "left,center,right" format with x-large fonts
-+ <E -- latex `equation' environment
-+ still more...
-#+END_SPAN6
-#+BEGIN_SPAN6
-copy-paste it
-to your =.emacs=
-
-#+BEGIN_CENTER
-[[file:config.el]]
-#+END_CENTER
-
-#+END_SPAN6
-#+END_ROW-FLUID
-#+END_CONTAINER-FLUID
-
-* Utility
-
-+ ./make-periotically.sh [args]
-  + Watches the changes in the directory and =make=
-  + Build statuses are notified in inotify pop-up
-  + all arguments are passed to =make=
-  + dependency : inotifywait, notify-send
-
-* Makefile Targets
-
-+ =make html= -- builds the html version
-+ =make resume= -- builds the resume version
-+ =make pdf= -- builds the pdf version
-+ =make= -- build all
-
-* Test
-
-+ [[http://www.google.com][Link]]
-+ This
-+ Is
-+ A Test
-
-Mathjax formula:
-
-\[
- E=mc^2
-\]
-
-\begin{equation}
- E=mc^2 + \frac{1}{2} mv^2
-\end{equation}
-
-** Twocolumn Test
-
-#+BEGIN_CONTAINER-FLUID
-#+BEGIN_ROW-FLUID
-#+BEGIN_SPAN6
-+ HOOA!
-+ *HOOA!*
-+ HOOA!
-#+END_SPAN6
-#+BEGIN_SPAN6
-This is a LISP ALIEN IN A CAGE!
-
-[[png:alien]]
-
-#+END_SPAN6
-#+END_ROW-FLUID
-#+END_CONTAINER-FLUID
+* Deep Reinforcement Learning
 
 
-** many columns test
+* Comparison
 
 
 #+BEGIN_CONTAINER-FLUID
 #+BEGIN_ROW-FLUID
-#+BEGIN_SPAN3
- a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a a
-#+END_SPAN3
-#+BEGIN_SPAN3
- b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b b
-#+END_SPAN3
-#+BEGIN_SPAN3
- c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c c
-#+END_SPAN3
-#+BEGIN_SPAN3
- d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d d
-#+END_SPAN3
+#+BEGIN_SPAN4
+#+BEGIN_CENTER
+*Classical Planning*
+#+END_CENTER
+
+_/✔/_ *Scalable, Highly-optimized solver* for complex combinatorial problems
+
+_/✔/_ Guided by *domain-independent* heuristics
+
+*/✘/* *Requires an explicit encoding* of the real world, written by human
+#+END_SPAN4
+#+BEGIN_SPAN4
+#+BEGIN_CENTER
+*Deep Reinforcement Learning*
+#+END_CENTER
+
+_/✔/_ Works on the *implicit encoding* of the real world
+
+*/✘/* Reasoning is limited to the *1-step future* of the current state
+
+*/✘/* guided by *instance-specific learned knowledge* (specific object, situation, goal)
+#+END_SPAN4
+#+END_ROW-FLUID
+#+BEGIN_SPAN4
+#+BEGIN_CENTER
+*Deep Reinforcement Learning*
+#+END_CENTER
+
+_/✔/_ Works on the *implicit encoding* of the real world
+
+*/✘/* Reasoning is limited to the *1-step future* of the current state
+
+*/✘/* guided by *instance-specific learned knowledge* (specific object, situation, goal)
+#+END_SPAN4
 #+END_ROW-FLUID
 #+END_CONTAINER-FLUID
 
-* A Slide with Too Little Contents
-
-#+BEGIN_CENTER
-#+BEGIN_SMALLER
-Hi, I'm small!
-#+END_SMALLER
-#+END_CENTER
-
-#+BEGIN_NOTE
-See the headline is correctly adjusted
-#+END_NOTE
-
-* Left-Center-Right template
-
-#+BEGIN_XLARGE
-x-large left
-#+BEGIN_CENTER
-centered
-#+END_CENTER
-#+BEGIN_ALIGNRIGHT
-right
-#+END_ALIGNRIGHT
-#+END_XLARGE
-
-#+BEGIN_NOTE
-This is a footnote
-#+END_NOTE
-
-* TODOs
-
-#+BEGIN_CONTAINER-FLUID
-#+BEGIN_ROW-FLUID
-#+BEGIN_SPAN6
-#+BEGIN_SMALLER
-+ Features
-  + Table of contents
-  + +=<dl>= does not expand+ *DONE*
-  + +Showing current keystrokes+ *DONE*
-  + auto-scroll/auto-zoom with big contents
-  + Showing current/total page number
-  + +Changing Stylesheet+ *DONE*. "style"
-  + +Up-Section command+ *DONE*. "u"
-  + Slide thumbnail
-  + +stopwatch/countdown timer+ *DONE*. "timer"
-  + +link to #section+ *DONE*.
-    #+HTML: <a href="index.html#6">sample link</a>
-#+END_SMALLER
-#+END_SPAN6
-#+BEGIN_SPAN6
-#+BEGIN_SMALLER
-+ Features inspired by other tools
-  + Content Search (in org-infojs)
-  + Drawing mode (in [[http://code.google.com/p/jessyink/][jessyink]])
-  + 'Paused' mode (in [[http://lab.hakim.se/reveal-js/][reveal.js]])
-  + +Export to PDF (also in reveal.js)+ *DONE*
-  + +resume output+ *DONE*
-  + Slide with an image covering the entire background (slideshare)
-  + present one paragraph/word/letter at a time
-    + those in [[http://docutils.sourceforge.net/docs/user/slide-shows.s5.html][s5]]
-  + "C-M-x" style notation in the command definition
-#+END_SMALLER
-#+END_SPAN6
-
-#+END_ROW-FLUID
-#+END_CONTAINER-FLUID
