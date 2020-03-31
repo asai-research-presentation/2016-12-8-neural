@@ -34,11 +34,13 @@ Apparently very complex $S$ can be described by low-dimentional $L$
 
 * Manifold Hypothesis
 
+#+BEGIN_QUOTE
 $x$: high dimensional vector in $S$, $z$ in manifold $L$
 
-Data is concentrated around a low dimensional manifold
+*Real-world data is concentrated around a low dimensional manifold*
 
-Hope finding a representation Z of that manifold.
+There is *a practical algorithm that finds a representation Z* of that manifold 
+#+END_QUOTE
 
 http://www.deeplearningbook.org/ and VAE tutorial
 
@@ -46,35 +48,31 @@ http://www.deeplearningbook.org/ and VAE tutorial
 
 * Manifold Hypothesis
 
-$x$: high dimensional vector in $S$, $z$: manifold $L$
-
-Data is concentrated around a low dimensional manifold
-
-Hope finding a representation Z of that manifold.
-
-http://www.deeplearningbook.org/ and VAE tutorial
-
 [[png:static/manifold2]]
 
 * How to obtain $L$?
 
-+ PCA: Principal Component Analysis
+#+BEGIN_LARGER
+Traditional Method: PCA (Principal Component Analysis)
 
-+ */✘/* Assumes a linear function
+*/✘/* Assumes a linear function
+#+END_LARGER
 
 \[y = f(x) = Wx + b\]
 
 * Neural Network
 
-+ A framework for learning a *function* that maps input $x$ to output $y$
+A framework for learning a *function* that maps input $x$ to output $y$
 
-+ NN w/ $>2$ layers can learn arbitrary function (given enough neurons)
+*Non-linear* activation function (e.g. sigmoid, ReLU)
+
+*NN w/ $>2$ layers can learn arbitrary function* (given enough neurons)
 
 \[x = \sigma (Wx + b) \]
 
 [[png:static/nn]]
 
-* Autoencoder
+* NN + PCA = AutoEncoder (AE)
 
 #+BEGIN_CENTER
 Unsupervised learning method which learns to 
@@ -102,12 +100,24 @@ Unsupervised learning method which learns to
 
 * Deep Autoencoder
 
-Deep AE made available by various techniques
+Deep AE made available by various techniques e.g.
 
-Stacked AE, pretraining, CNN, dropout, Batch-Normalization, GPU...
+Stacked AE, pretraining, +CNN+, +dropout+, +Batch-Normalization+, +GPU+
 
 [[png:static/deep-ae]]
 
+* Recap
+
+#+BEGIN_CENTER
+#+BEGIN_LARGER
++ Real world can be compactly represented by (compressed into) a latent space $L$ 
++ Latent space can be obtained by PCA(linear) and AutoEncoder(arbitrary)
+#+END_LARGER
+#+END_CENTER
+
+#+BEGIN_ALIGNRIGHT
+How to use the latent space?
+#+END_ALIGNRIGHT
 
 * Reinforcement Learning
 
@@ -123,7 +133,7 @@ Methods: Value-iteration, Policy-iteration, TD-learning ∋ Q-learning
 
 * Reinforcement Learning(RL) in Latent Space (e.g. Luck IROS14, AAAI16)
 
-RL in $S$ is too difficult → Apply RL to $L$ for speedup
+RL in $S$ is too difficult → Apply RL to $L$ for speedup ($L$ is obtained by PCA)
 
 \[x\in S, z \in L: \ x = f(z) \]
 
@@ -139,11 +149,14 @@ mapping 62-DOF space → 2D
 # The real world is apparently complex, but in *almost all cases* they can be described by *only a few parameters*.
 # #+END_QUOTE
 
-* Deep Reinforcement Learning: DQN?
+* Deep Reinforcement Learning: DQN
 
 No, DQN is not using latent space representation
 
-It represents Q-function by neural network
+DQN represents policy-function (state->action)
+
+but it is possible
+
 
 * Classical Planning 
 
@@ -180,7 +193,6 @@ _/✔/_ Guided by *domain-independent* heuristics
 */✘/* *Requires an explicit encoding* of the real world, written by human
 #+END_SPAN6
 #+END_ROW-FLUID
-#+END_ROW-FLUID
 #+END_CONTAINER-FLUID
 
 * Goal of this project
@@ -191,10 +203,10 @@ _/✔/_ Guided by *domain-independent* heuristics
 | state representation | Reinforcement Learning | Classical Planning     |
 |----------------------+------------------------+------------------------|
 | Latent state         | Latent RL              | *Latent Planning*      |
-| representation       |                        |                        |
+| (PCA)                |                        |                        |
 |----------------------+------------------------+------------------------|
 | Deep Latent state    |                        | *Deep Latent Planning* |
-| (found by Deep AE)   |                        |                        |
+| (Deep AE)            |                        |                        |
 
 * How?
 
@@ -208,7 +220,21 @@ Mapping the input image to latent space (encoding part)
 
 * How?
 
-Mapping the latent space to the actual image (decoding part)
+Mapping the latent space back to the actual image (decoding part)
 
 [[png:static/vae-manifold]]
+
+* Action Representation
+
+[[png:action2]]
+
+* Action Representation (high-dimensional)
+
+[[png:action]]
+
+
+
+* System Overview
+
+[[png:overview]]
 
